@@ -35,7 +35,7 @@ function Card(text, action) {
 }
 
 function corrections() {
-	document.getElementById("cell1name").textContent = "Mediter-ranean Avenue";
+	document.getElementById("cell1name").textContent = "strife zone";
 
 	// Add images to enlarges.
 	document.getElementById("enlarge5token").innerHTML += '<img src="images/train_icon.png" height="60" width="65" alt="" style="position: relative; bottom: 20px;" />';
@@ -85,7 +85,7 @@ square[11] = new Square("KKDK", "$140", "#FF0080", 140, 5, 10, 50, 150, 450, 625
 square[12] = new Square("Randolph's Restaurant", "$150", "#FFFFFF", 150, 2);
 square[13] = new Square("Bazar", "$140", "#FF0080", 140, 5, 10, 50, 150, 450, 625, 750);
 square[14] = new Square("Labyrinth town of Rapan", "$160", "#FF0080", 160, 5, 12, 60, 180, 500, 700, 900);
-square[15] = new Square("Wind-Zanto Ports Crossing ", "$200", "#FFFFFF", 200, 1);
+square[15] = new Square("Wind-Zanto Ports Crossing Guild", "$200", "#FFFFFF", 200, 1);
 square[16] = new Square("Sanakia Kingdom", "$180", "#FFA500", 180, 6, 14, 70, 200, 550, 750, 950);
 square[17] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[18] = new Square("Kikka Kingdom", "$180", "#FFA500", 180, 6, 14, 70, 200, 550, 750, 950);
@@ -105,46 +105,46 @@ square[31] = new Square("East Port", "$300", "#008000", 300, 9, 26, 130, 390, 90
 square[32] = new Square("West Port", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
 square[33] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[34] = new Square("Milishion", "$320", "#008000", 320, 9, 28, 150, 450, 1000, 1200, 1400);
-square[35] = new Square("Millis Church", "$200", "#FFFFFF", 200, 1);
+square[35] = new Square("Millis Church, Priest Guild", "$200", "#FFFFFF", 200, 1);
 square[36] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[37] = new Square("Arusu and Asura Kingdom", "$350", "#0000FF", 350, 10, 35, 175, 500, 1100, 1300, 1500);
 square[38] = new Square("Gifts for Ariel", "Pay $100", "#FFFFFF");
-square[39] = new Square("Flying Castle", "$400", "#0000FF", 400, 10, 50, 200, 600, 1400, 1700, 2000);
+square[39] = new Square("Flying Fortress", "$400", "#0000FF", 400, 10, 50, 200, 600, 1400, 1700, 2000);
 
 var communityChestCards = [];
 var chanceCards = [];
 
 communityChestCards[0] = new Card("Be friends with Zanoba, Free. This card may be kept until needed or sold.", function(p) { p.communityChestJailCard = true; updateOwned();});
-communityChestCards[1] = new Card("You have won second prize in a beauty contest. Collect $10.", function() { addamount(10, 'Community Chest');});
-communityChestCards[2] = new Card("From sale of stock, you get $50.", function() { addamount(50, 'Community Chest');});
-communityChestCards[3] = new Card("Life insurance matures. Collect $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[4] = new Card("Income tax refund. Collect $20.", function() { addamount(20, 'Community Chest');});
-communityChestCards[5] = new Card("Holiday fund matures. Receive $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[6] = new Card("You inherit $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[7] = new Card("Receive $25 consultancy fee.", function() { addamount(25, 'Community Chest');});
-communityChestCards[8] = new Card("Pay hospital fees of $100.", function() { subtractamount(100, 'Community Chest');});
-communityChestCards[9] = new Card("Bank error in your favor. Collect $200.", function() { addamount(200, 'Community Chest');});
-communityChestCards[10] = new Card("Pay school fees of $50.", function() { subtractamount(50, 'Community Chest');});
-communityChestCards[11] = new Card("Doctor's fee. Pay $50.", function() { subtractamount(50, 'Community Chest');});
+communityChestCards[1] = new Card("You have won second prize in a beauty contest (Ariel 1st, You 2nd, Goliade 3rd). Collect $10.", function() { addamount(10, 'Community Chest');});
+communityChestCards[2] = new Card("From sale of Ruijerd books, you get $50.", function() { addamount(50, 'Community Chest');});
+communityChestCards[3] = new Card("you done some dungeon Diving. Collect $100.", function() { addamount(100, 'Community Chest');});
+communityChestCards[4] = new Card("Force Krishika to pay her tax refund. Collect $20.", function() { addamount(20, 'Community Chest');});
+communityChestCards[5] = new Card("you gamble and cheated, at least you werent the one who atacked the holy Beast. Receive $100.", function() { addamount(100, 'Community Chest');});
+communityChestCards[6] = new Card("Elinalise give is you some coins. Recive $100.", function() { addamount(100, 'Community Chest');});
+communityChestCards[7] = new Card("recive $25 for completing a Adventure request .", function() { addamount(25, 'Community Chest');});
+communityChestCards[8] = new Card("Gisu gambled your money away. Lose $100.", function() { subtractamount(100, 'Community Chest');});
+communityChestCards[9] = new Card("Philip was Drunk and payed your salary again. Collect $200.", function() { addamount(200, 'Community Chest');});
+communityChestCards[10] = new Card("Pay university fees of $50.", function() { subtractamount(50, 'Community Chest');});
+communityChestCards[11] = new Card("Church Healers's fee. Pay $50.", function() { subtractamount(50, 'Community Chest');});
 communityChestCards[12] = new Card("It is your birthday. Collect $10 from every player.", function() { collectfromeachplayer(10, 'Community Chest');});
 communityChestCards[13] = new Card("Advance to \"GO\" (Collect $200).", function() { advance(0);});
-communityChestCards[14] = new Card("You are assessed for street repairs. $40 per house. $115 per hotel.", function() { streetrepairs(40, 115);});
-communityChestCards[15] = new Card("Go to Jail. Go directly to Jail. Do not pass \"GO\". Do not collect $200.", function() { gotojail();});
+communityChestCards[14] = new Card("you had complains about your taxes. $40 per house. $115 per hotel.", function() { streetrepairs(40, 115);});
+communityChestCards[15] = new Card("you fell in Pax trap. Go directly to his bassement. Do not pass \"GO\". Do not collect $200.", function() { gotojail();});
 
 
-chanceCards[0] = new Card("GET OUT OF JAIL FREE. This card may be kept until needed or traded.", function(p) { p.chanceJailCard=true; updateOwned();});
-chanceCards[1] = new Card("Make General Repairs on All Your Property. For each house pay $25. For each hotel $100.", function() { streetrepairs(25, 100);});
-chanceCards[2] = new Card("Speeding fine $15.", function() { subtractamount(15, 'Chance');});
-chanceCards[3] = new Card("You have been elected chairman of the board. Pay each player $50.", function() { payeachplayer(50, 'Chance');});
-chanceCards[4] = new Card("Go back three spaces.", function() { gobackthreespaces();});
-chanceCards[5] = new Card("ADVANCE TO THE NEAREST UTILITY. IF UNOWNED, you may buy it from the Bank. IF OWNED, throw dice and pay owner a total ten times the amount thrown.", function() { advanceToNearestUtility();});
-chanceCards[6] = new Card("Bank pays you dividend of $50.", function() { addamount(50, 'Chance');});
-chanceCards[7] = new Card("ADVANCE TO THE NEAREST RAILROAD. If UNOWNED, you may buy it from the Bank. If OWNED, pay owner twice the rental to which they are otherwise entitled.", function() { advanceToNearestRailroad();});
+chanceCards[0] = new Card("BE ZANOBA's TEACHER. This card may be kept until needed or traded.", function(p) { p.chanceJailCard=true; updateOwned();});
+chanceCards[1] = new Card("Roxy borke your lodgins. For each house pay $25. For each hotel $100.", function() { streetrepairs(25, 100);});
+chanceCards[2] = new Card("Fwahahah, baldi gave you fine of $15 for not laughing.", function() { subtractamount(15, 'Chance');});
+chanceCards[3] = new Card("You have been elected chairman of A mercenary band. Pay each player $50.", function() { payeachplayer(50, 'Chance');});
+chanceCards[4] = new Card("you see Sara, Go back three spaces.", function() { gobackthreespaces();});
+chanceCards[5] = new Card("ADVANCE TO THE NEAREST BUISNESS. IF UNOWNED, you may buy it from the Bank. IF OWNED, throw dice and pay owner a total ten times the amount thrown.", function() { advanceToNearestUtility();});
+chanceCards[6] = new Card("Paul Pays you your loan of $50.", function() { addamount(50, 'Chance');});
+chanceCards[7] = new Card("ADVANCE TO THE NEAREST GUILD. If UNOWNED, you may buy it from the Bank. If OWNED, pay owner twice the rental to which they are otherwise entitled.", function() { advanceToNearestRailroad();});
 chanceCards[8] = new Card("Pay poor tax of $15.", function() { subtractamount(15, 'Chance');});
-chanceCards[9] = new Card("Take a trip to Reading Rail Road. If you pass \"GO\" collect $200.", function() { advance(5);});
-chanceCards[10] = new Card("ADVANCE to Boardwalk.", function() { advance(39);});
-chanceCards[11] = new Card("ADVANCE to Illinois Avenue. If you pass \"GO\" collect $200.", function() { advance(24);});
+chanceCards[9] = new Card("Go to the Aventurer's guild. If you pass \"GO\" collect $200.", function() { advance(5);});
+chanceCards[10] = new Card("Visit Perugious in the Flying Fortress.", function() { advance(39);});
+chanceCards[11] = new Card("ADVANCE to Zanto Port. If you pass \"GO\" collect $200.", function() { advance(24);});
 chanceCards[12] = new Card("Your building loan matures. Collect $150.", function() { addamount(150, 'Chance');});
-chanceCards[13] = new Card("ADVANCE TO THE NEAREST RAILROAD. If UNOWNED, you may buy it from the Bank. If OWNED, pay owner twice the rental to which they are otherwise entitled.", function() { advanceToNearestRailroad();});
-chanceCards[14] = new Card("ADVANCE to St. Charles Place. If you pass \"GO\" collect $200.", function() { advance(11);});
-chanceCards[15] = new Card("Go to Jail. Go Directly to Jail. Do not pass \"GO\". Do not collect $200.", function() { gotojail();});
+chanceCards[13] = new Card("ADVANCE TO THE NEAREST GUILD. If UNOWNED, you may buy it from the Bank. If OWNED, pay owner twice the rental to which they are otherwise entitled.", function() { advanceToNearestRailroad();});
+chanceCards[14] = new Card("ADVANCE to KKDK. If you pass \"GO\" collect $200.", function() { advance(11);});
+chanceCards[15] = new Card("you fell in Pax trap. Go directly to his bassement. Do not pass \"GO\". Do not collect $200.", function() { gotojail();});
