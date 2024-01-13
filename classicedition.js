@@ -82,7 +82,7 @@ square[8] = new Square("Wind Port", "$100", "#87CEEB", 100, 4, 6, 30, 90, 270, 4
 square[9] = new Square("Krishika's Castle", "$120", "#87CEEB", 120, 4, 8, 40, 100, 300, 450, 600);
 square[10] = new Square("Just Visiting", "", "#FFFFFF");
 square[11] = new Square("KKDK", "$140", "#FF0080", 140, 5, 10, 50, 150, 450, 625, 750);
-square[12] = new Square("Randolphs Familly Restaurant", "$150", "#FFFFFF", 150, 2);
+square[12] = new Square("Randolph's Restaurant", "$150", "#FFFFFF", 150, 2);
 square[13] = new Square("Bazar", "$140", "#FF0080", 140, 5, 10, 50, 150, 450, 625, 750);
 square[14] = new Square("Labyrinth town of Rapan", "$160", "#FF0080", 160, 5, 12, 60, 180, 500, 700, 900);
 square[15] = new Square("Wind-Zanto Ports Crossing ", "$200", "#FFFFFF", 200, 1);
@@ -93,12 +93,12 @@ square[19] = new Square("Shiron Kingdom", "$200", "#FFA500", 200, 6, 16, 80, 220
 square[20] = new Square("Migurd Village", "", "#FFFFFF");
 square[21] = new Square("Beast Territories", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
 square[22] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[23] = new Square("Elf and DwarfTerritories", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
+square[23] = new Square("Great Forest", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
 square[24] = new Square("Zanto Port", "$240", "#FF0000", 240, 7, 20, 100, 300, 750, 925, 1100);
 square[25] = new Square("Magicians Guild", "$200", "#FFFFFF", 200, 1);
 square[26] = new Square("Basherant Kingdom", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
 square[27] = new Square("Neris Kingdom", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
-square[28] = new Square("Water Works", "$150", "#FFFFFF", 150, 2);
+square[28] = new Square("Magic Tools workshops", "$150", "#FFFFFF", 150, 2);
 square[29] = new Square("Ranoa Kingdom", "$280", "#FFFF00", 280, 8, 24, 120, 360, 850, 1025, 1200);
 square[30] = new Square("Go to Pax Bassement", "Go directly to Jail. Do not pass GO. Do not collect $200.", "#FFFFFF");
 square[31] = new Square("East Port", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
@@ -114,7 +114,7 @@ square[39] = new Square("Flying Castle", "$400", "#0000FF", 400, 10, 50, 200, 60
 var communityChestCards = [];
 var chanceCards = [];
 
-communityChestCards[0] = new Card("Get out of Jail, Free. This card may be kept until needed or sold.", function(p) { p.communityChestJailCard = true; updateOwned();});
+communityChestCards[0] = new Card("Be friends with Zanoba, Free. This card may be kept until needed or sold.", function(p) { p.communityChestJailCard = true; updateOwned();});
 communityChestCards[1] = new Card("You have won second prize in a beauty contest. Collect $10.", function() { addamount(10, 'Community Chest');});
 communityChestCards[2] = new Card("From sale of stock, you get $50.", function() { addamount(50, 'Community Chest');});
 communityChestCards[3] = new Card("Life insurance matures. Collect $100.", function() { addamount(100, 'Community Chest');});
